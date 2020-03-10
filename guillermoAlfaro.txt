@@ -186,11 +186,34 @@ Copy the questions below into the firt-lastname.txt file on your github repo - a
 Stretch Questions
 
     1. What is the difference between an inline element and a block element?
-    2. What happens when an element is positioned absolutely? 
-    3. How do I make an element take up only the amount of space it needs but also have the ability to give it a width? 
-    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default and 1 element that is display inline-block by default
-    5. In your own words, explain the box model. What is the fix for the box model? 
+    Inline elements can share the same screen space with other inline elements, whereas block elements
+    cannot share that same space. A block element will be on top of another, but inline elements can be at the same height.
+    and line than other elements. 
 
+    2. What happens when an element is positioned absolutely? 
+    When an element is positioned absolutely it is positioned relative to the closest parent element, instead
+    of positioned relative to the screen(which would be the standard fixed position). If an absolute element has
+    no relative elements it will use the body as a reference position and will move along with the page scrolling.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to 
+    give it a width? 
+
+    You can use the width: x%; to make sure it fits the screen and also becomes responsive in the sense that 
+    it will always adjust to screen size and positioning. 
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default 
+    and 1 element that is display inline-block by default
+
+    block: <div>, <p>, <h1>-<h6>
+    inline: <span>, <input>, <strong> 
+    inline block: I think the inline-block property must be set in CSS, such as making nav links be at the 
+    same height or list elements appear horizontally instead of vertically. 
+
+    5. In your own words, explain the box model. What is the fix for the box model? 
+   The box model encompasses the actual element area, the padding, the border, and the margin. All these 
+   properties use up space and can affect the overall layout of a website. 
+   The fix for the box model would be to use the:
+   box-sizing: border-box property to make sure the box model includes all these properties when sizing. 
 
 
    --> 
