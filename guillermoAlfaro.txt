@@ -1,0 +1,219 @@
+https://codepen.io/GALFAROTOLON/pen/dyoJByP?editors=1100
+
+<!--1. fork this codepen so that you have a copy on your account -->
+<!--2. Add HTML and CSS to make the codepen look like the example: https://codepen.io/BritHemming/full/jONmxOm  - note that you can change the colours but everything else must look the same -->
+<!-- 3. include the link to this completed codepen at the top of today's file first-lastname.txt --> 
+<!-- 4. when you are finished - answer the review questions at the bottom of this file -->
+
+
+
+<!-- reveiw questions to Submit in today's file firt-lastname.txt --> 
+<!--
+Copy the questions below into the firt-lastname.txt file on your github repo - answer each question and then push your changes. 
+
+    1. What is Semantic HTML? 
+    HTML that gives meaning to our content, such as <nav>, <footer>, <h1>-<h6>.
+
+    2. What is HTML used for? 
+    HTML is used to give structure to a web page. It is the "foundations" of the house, where CSS is the decorations/furniture and Javascript is the electricity/plumbing.
+    
+    3. What is an attribute and where do we put it? 
+    Attributes give additional information to an element, such as a "class" or a "src". These attributes go inside
+    of the element tags such as <img src="imagefilehere"> or <div class="exampleClass">.
+
+    4. What is the h1 tag used for? How many times should I use it on a page?
+    The <h1> tag is normally used for the main header of a web page and should by convention only be used once.
+
+    5. Name two tags that have required attributes
+    <input> tags require attributes such as "type", "id", and "name". 
+    The <a> tag also normally comes with a hyperlink attribute "href". 
+
+    6. What do we put in the head of our HTML document? 
+    We put <!DOCTYPE HTML> to make sure the browser can quickly tell what language our website is written in.
+    Then we can put a <head> to include the name/title of the website. This is normally called an HTML "boilerplate"
+    as it is always the standard format to include in each html document. A link to an external CSS file is 
+    also usually found in the <head> of an HTML document.
+
+    7. What is an id? 
+    An id is an unique identifier that helps target elements easily when using CSS and Javascript (DOM). 
+
+    8. What elements can I add an id to? 
+    The id attribute can be used on any html element.
+
+    9. How many times can I use the same id on a page? 
+    An id is unique and should only be used one time per attribute. Each id should have a different name.  
+
+    10. What is a class? 
+    A class is similar to an id in that it helps target style in CSS easily and also in Javascript, but 
+    unlike ids that can only be used one time, classes can be used multiple times in different elements. 
+
+    11. What elements can I add a class to? 
+    Normally classes are added to <div>s or <section>s but they can be added to any HTML element. 
+
+    12. How many times can I use the same class on a page? 
+    Classes do not have restrictions and can be used as many times as necessary. 
+
+    13. How do I get my link to open in a new tab?
+    To open a link in a new tab one must use the target attribute and make it equal to blank, such as:
+    <a href="linktoapicturehere" target=_blank>.
+
+    14. What is the alt attribute used for? 
+    the alt attribute is used as a description for an image when it cannot be displayed or to help people
+    with disabilities understand it (perhaps the visually impaired). 
+
+    15. How do I reference an id?
+    In CSS ids are referenced by adding # followed by the id name:
+    #exampleId
+
+    16. What is the difference between a section and a div?
+    A section groups pieces of text or information that are relevant to one another, while divs are
+    more commonly used to group different information that perhaps has no relevance other than the same
+    styling for CSS or JS. 
+
+    17. What is CSS used for? 
+    CSS (cascading style sheets) are used to give style to an HTML document. Normally done by adding external
+    CSS files to an html file, it can however also be applied in a documents header section or inline with
+    the <style> element tag.
+
+    18. How to we select an element? Example - every h2 on the page
+    This element would be seleced by doing so:
+    h2{
+        color: green; 
+    }
+
+    19. What is the difference between a class and an id? - Give me an example of when I might use each one
+
+    An id is an unique identifier and is more specific, making it easier to target one specific element in an
+    HTML document. Classes are less specific and can be used freely accross the document to apply similar styles
+    to different elements. 
+
+    20. How do we select classes in CSS?
+    We select classes by adding a "." in front of the class name:
+    .exampleClass{
+       
+    }
+
+    21. How do we select a p element with a single class of “human””?
+    You can select an element of p with a class of "human" like this:
+    .human{
+
+    }
+
+    You directly select the class because in this case it is a single class and will only affect that <p>
+    element. 
+
+    22. What is a parent child selector? When would this be useful?
+    This can be useful when only targeting one element of a parent selector, such as one specific 
+    <li> item in an <ul>. 
+
+    23. How do you select all links within a div with the class of sidebar?
+    .sidebar{
+
+    }
+
+    24. What is a pseudo selector?
+    a pseudo selector is a selector that only applies when something happens, such as a hover over a 
+    certain element. 
+
+    25. What do we use the change the spacing between lines?
+    example: 
+
+    p{
+    line-height: 1.5
+    }
+
+    26. What do we use to change the spacing between letters?
+    We use: 
+
+    p{
+        letter-spacing: 2px;
+    }
+
+    27. What do we use to to change everything to CAPITALS? lowercase? Capitalize?
+    We use the text-transform property, uppercase, capitalize, lowercase, and several others can be 
+    used to alter text without touching the HTML file. 
+
+    28. How do I add a 1px border around my div that is dotted and black?
+    {
+        border: dotted black 1px;
+    }
+
+    29. How do I select everything on the page?
+    You can use body if you have all of your page wrapped around the body tags or you can use the
+    * selector that selects all the page.  
+
+
+    30. How do I write a comment in CSS?
+    use /* */ and the text in between, or the double front dash //.
+
+
+    31. How do I find out what file I am in, when I am using the command line?
+    pwd 
+
+    32. Using the command line - how do I see a list of files/folders in my current folder?
+    ls 
+
+    33. How do I remove a file via the command line? Why do I have to be careful with this? 
+    rm fileName
+
+    34. Why should I use version control? 
+    To keep your progress saved and ensure you can go back to a previous version in case your app breaks. 
+    Also to let other developers see your problem solving skills and approach to each different version. 
+
+    35. How often should I commit to github?
+    Each 20-30 mintues is a good rule of thumb. 
+
+    36. What is the command we would use to push our repo up to github? 
+    git push : this uploads all the files to our github account.
+
+    37. Walk me through Lambda's git flow. 
+    First fork the repository (make sure when you see your name on the top left)
+    Then add collaborator (your TL)
+    Clone the repository by copying the https link to the command line (first ensure you are in the folder
+    you want to use by cd ing into it)
+    cd into the newly created repo by entering cd followed by the repo project name
+    use git checkout -b "firstname-lastname" to branch from the master branch. 
+    Once you start working on assignment, use the git status to see if you need to add any new changes.
+    If so, use git add . ( to add all the changes). 
+    Then git commit -m "add a comment here with the new changes"- this will save all the progress.
+    Then push the changes to the github repo by using git push -u origin firstname-lastname
+    When the changes are on gitbhub then proceed with pull request
+    Make sure it is the forked repository and not the base one
+    Add the TL to the reviewers of the repo and then submit the pull request
+    DO NOT MERGE the request (this is done by the TL once he/she has reviewed the repo.)
+
+
+Stretch Questions
+
+    1. What is the difference between an inline element and a block element?
+    Inline elements can share the same screen space with other inline elements, whereas block elements
+    cannot share that same space. A block element will be on top of another, but inline elements can be at the same height.
+    and line than other elements. 
+
+    2. What happens when an element is positioned absolutely? 
+    When an element is positioned absolutely it is positioned relative to the closest parent element, instead
+    of positioned relative to the screen(which would be the standard fixed position). If an absolute element has
+    no relative elements it will use the body as a reference position and will move along with the page scrolling.
+
+    3. How do I make an element take up only the amount of space it needs but also have the ability to 
+    give it a width? 
+
+    You can use the width: x%; to make sure it fits the screen and also becomes responsive in the sense that 
+    it will always adjust to screen size and positioning. 
+
+    4. Name 3 elements that are diplay block by default, 2 elements that are display inline by default 
+    and 1 element that is display inline-block by default
+
+    block: <div>, <p>, <h1>-<h6>
+    inline: <span>, <input>, <strong> 
+    inline block: I think the inline-block property must be set in CSS, such as making nav links be at the 
+    same height or list elements appear horizontally instead of vertically. 
+
+    5. In your own words, explain the box model. What is the fix for the box model? 
+   The box model encompasses the actual element area, the padding, the border, and the margin. All these 
+   properties use up space and can affect the overall layout of a website. 
+   The fix for the box model would be to use the:
+   box-sizing: border-box property to make sure the box model includes all these properties when sizing. 
+
+
+   --> 
